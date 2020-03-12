@@ -1,0 +1,26 @@
+$ git log
+commit 3b7829c837ac4c87f203733d7880e0c077449b22 (HEAD -> master)
+Author: PolishukArtem <CazeOne1@gmail.com>
+Date:   Fri Mar 6 20:20:51 2020 +0200
+
+    Add an author & email comment
+
+commit 9d9513e4f0dc3377bf2433353636520f38c2dd78 (tag: v1)
+Author: PolishukArtem <CazeOne1@gmail.com>
+Date:   Fri Mar 6 19:33:35 2020 +0200
+
+    Add header tag
+
+commit 894633c3b8fc89cefbec9c45a8523b98a2894dfa (tag: v1-beta)
+Author: PolishukArtem <CazeOne1@gmail.com>
+Date:   Fri Mar 6 19:31:59 2020 +0200
+
+    Add HTML page tags
+
+commit 09baa80a6ba7487e025a94ee9e5b9ac9c7f5707e
+Author: PolishukArtem <CazeOne1@gmail.com>
+Date:   Fri Mar 6 19:28:00 2020 +0200
+
+    Added <h1> tag
+:
+
