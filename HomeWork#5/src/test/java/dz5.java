@@ -17,7 +17,7 @@ public class dz5 {
     public void Test() {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-notifications");
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Acer\\Desktop\\QA-homework-master\\DZprelast\\driver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "E:\\QA-homework\\HomeWork#5\\src\\test\\java\\chromedriver.exe");
         driver = new ChromeDriver(options);
 
         WebDriverWait webDriverWait = new WebDriverWait(driver,3);

@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>DZprelast</artifactId>
+    <artifactId>HomeWork#5</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <build>
@@ -20,18 +20,18 @@
             </plugin>
         </plugins>
     </build>
-        <dependencies>
-            <dependency>
-              <groupId>org.seleniumhq.selenium</groupId>
-              <artifactId>selenium-java</artifactId>
-              <version>3.141.59</version>
-         </dependency>
-            <dependency>
-                <groupId>org.testng</groupId>
-                <artifactId>testng</artifactId>
-                <version>6.14.3</version>
-                <scope>test</scope>
-            </dependency>
+    <dependencies>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.141.59</version>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.14.3</version>
+            <scope>test</scope>
+        </dependency>
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
