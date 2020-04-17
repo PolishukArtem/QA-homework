@@ -1,0 +1,252 @@
+{
+	"info": {
+		"_postman_id": "31cb40c3-44ec-4ae8-bdd9-7ffb3f3fe5f6",
+		"name": "Users Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateUsersList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"id\": 0,\n        \"username\": \"ahsoka\",\n        \"firstName\": \"Stas\",\n        \"lastName\": \"Syrovaten\",\n        \"email\": \"SS@gmailc.om\",\n        \"password\": \"322cashisntaproblem\",\n        \"phone\": \"555-222-666\",\n        \"userStatus\": 0\n    },\n    {\n        \"id\": 1,\n        \"username\": \"Nawezac\",\n        \"firstName\": \"Artem\",\n        \"lastName\": \"Polishuk\",\n        \"email\": \"cazeone@gmail.com\",\n        \"password\": \"anemnogolitebenado\",\n        \"phone\": \"razdvatri\",\n        \"userStatus\": 0\n    }\n]"
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/createWithList",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"createWithList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUser0",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/ahsoka",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"ahsoka"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUser1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/Nawezac",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"Nawezac"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LogginUser1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/login?username=Nawezac&password=anemnogolitebenado",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"login"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "Nawezac"
+						},
+						{
+							"key": "password",
+							"value": "anemnogolitebenado"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateUser1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"id\": 0, \"username\": \"CazeOne\", \"firstName\": \"Metra\", \"lastName\": \"kuhsilop\", \"email\": \"Nawezac@gmail.com\", \"password\": \"123123\", \"phone\": \"555-888-222\", \"userStatus\": 0}"
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/Nawezac",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"Nawezac"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUpdatedUser1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/CazeOne",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"CazeOne"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteUser0",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/ahsoka",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"ahsoka"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteUser1",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/CazeOne",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"CazeOne"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
