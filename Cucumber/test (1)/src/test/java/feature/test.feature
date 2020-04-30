@@ -13,4 +13,4 @@ Feature: Is Quarantine over already?
   Scenario: Can i go to cinema?
     Given quarantine is over
     When I ask whether i can go to cinema
-    Then I should say "Yes, you can!"
+    Then I should be told "Yes, you can!"

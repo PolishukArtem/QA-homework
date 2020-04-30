@@ -3,26 +3,20 @@ package test;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.junit.Assert;
 
 import static org.junit.Assert.assertEquals;
 
 class IsItOver {
     static String isItOver(int illPeople) {
-        return (illPeople<100)? "Quarantine is over!" : "Quarantine is going on!";
-    }
-}
-
-class YesCan {
-    static String yesCan(String Yes) {
-        return "'Yes, you can!'";
+        return (illPeople < 100) ? "Quarantine is over!" : "Quarantine is going on!";
     }
 }
 
 public class Stepdefs {
     private int illPeople;
     private String actualAnswer;
-    private String Yes;
-    private String secondAnswer;
+    private boolean isQuarantineOver = false;
 
     @Given("number of ill people is {int}")
     public void today_is(int illPeople) {
@@ -36,21 +30,21 @@ public class Stepdefs {
 
     @Then("I should be told (.*)")
     public void i_should_be_told(String expectedAnswer) {
-        assertEquals(expectedAnswer, actualAnswer);
+        Assert.assertEquals(expectedAnswer, actualAnswer);
     }
 
     @Given("quarantine is over")
     public void quarantine_is_over() {
-        Yes = "Yes, you can!";
+        isQuarantineOver = true;
     }
 
     @When("I ask whether i can go to cinema")
     public void can_i_go_to_the_cinema() {
-        secondAnswer = YesCan.yesCan(Yes);
+        actualAnswer = (isQuarantineOver) ?  "\"Yes, you can!\"" : "\"Nope!\"";
     }
 
-    @Then("I should say '(.*)'")
-    public void i_should_be_told_cinema(String expectedAnswer2) {
-        assertEquals(expectedAnswer2, secondAnswer);
+    @Then("I should be told '(.*?)'$")
+    public void i_should_be_told_cinema(String expectedAnswer) {
+        Assert.assertEquals(expectedAnswer, actualAnswer);
     }
 }
